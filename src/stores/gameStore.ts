@@ -36,7 +36,7 @@ export const useGameStore = create<GameState>()(
       musicVolume: 0.5,
       lastPlayed: null,
       
-      setGameLoaded: (isLoaded: boolean) => {
+      setGameLoaded: (isGameLoaded: boolean) => {
         set({ isGameLoaded });
       },
       
