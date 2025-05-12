@@ -18,7 +18,7 @@ export const useGameInitialization = () => {
     const initialize = async () => {
       try {
         // Skip initialization if game is already loaded
-        if (useGameStore.getState().isGameLoaded) {
+        if (isGameLoaded) {
           setIsLoading(false);
           return;
         }
